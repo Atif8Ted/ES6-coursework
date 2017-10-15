@@ -85,14 +85,51 @@ let [elem1,elem2]=z;
 console.log(elem1,elem2);
 */
 
-let king={name:'Mufasa', kids:1};
+/*let king={name:'Mufasa', kids:1};
 /*let name=king.name;
 let kid=king.kids;
 console.log(name,kid);*/
 /*let {name,kids}=king;
 console.log(name,kids);
-*/
+*//*
 let son={name:'Simba',parents:2};
 let name,parents;
 ({name,parents}=son);
 console.log(name,parents);
+*/
+
+//-------------------------
+//************arrow function********
+/*setTimeout(function(){
+	console.log("Woof Woof")
+},3000);
+
+setTimeout(()=>{
+	console.log("Woof woof mada");
+},3000)
+
+let cheer=()=>{
+	console.log("Ahhh! , There you come madafaka -_-");
+}
+cheer();
+*/
+
+//***map helper method
+
+/*let values=[20,30,40];
+let double=(n)=>{
+	return n*2;
+}
+let doubled=values.map(double);
+console.log(doubled);
+*/
+
+/*let values=[20,30,40];
+let doubled=values.map((n)=>{
+	return n*2;
+});
+console.log(doubled);*/
+
+let values=[20,30,40];
+let doubled=values.map((n)=>n*2);
+console.log(doubled);
