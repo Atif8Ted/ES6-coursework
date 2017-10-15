@@ -72,10 +72,12 @@ module.exports = __webpack_require__(1);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-console.log("Hello World! This is from webpack");
+"use strict";
 
+
+console.log("Hello World! This is from :My name is jef what are you doing mate");
 
 /***/ })
 /******/ ]);

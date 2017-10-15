@@ -1,7 +1,21 @@
 module.exports={
-  entry:['/home/atif/Documents/es6 in depth/es6/app/index.js'],
+  entry:['/home/atif/Documents/es6/es6/app/index.js'],
   output:{
-    path:'/home/atif/Documents/es6 in depth/es6/build',
+    path:'/home/atif/Documents/es6/es6/build',
     filename:'bundle.js'
+  },
+  module:{
+    loaders:[
+      {
+        loader:'babel-loader',
+        test:/\.js$/,
+        exclude:/node_modules/
+      }
+    ]
+  },
+  devServer:{
+    port:3000,
+    contentBase:'/home/atif/Documents/es6/es6/build',
+    inline: true
   }
 }
