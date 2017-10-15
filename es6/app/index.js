@@ -45,10 +45,54 @@ console.log('overall venue limit',limit);
 */
 //---------------------------------------
 //*******template literals
-let a =`good`;
+/*let a =`good`;
 let greeting=`${a} "morning atif"`;
 console.log(greeting);
 // different example
 let b='Atif';
 let c=`Happy birthday ${b}`;
 console.log(c);
+*/
+
+//-----------------
+//*******operating Destructing Assignment *******/
+
+/*no 1 Spread operator*/
+
+/*let a =[20,30,40];
+let b=[10,...a,50];
+console.log(b);
+
+let c =["Dana","Erik","Frank"];
+let d =["Alice","Bob","carl",...c];
+console.log(d);
+//function with spread operator 
+function collect(...e){
+	console.log(e);
+}
+
+collect(3,6,9,12);
+*/
+//*********************************************
+
+/* Destructing assignment  on arrays and assignment */
+/*let z=[4,5,6];
+let four =z[0];
+let five=z[1];
+console.log(four,five);
+//now comes es6
+let [elem1,elem2]=z;
+console.log(elem1,elem2);
+*/
+
+let king={name:'Mufasa', kids:1};
+/*let name=king.name;
+let kid=king.kids;
+console.log(name,kid);*/
+/*let {name,kids}=king;
+console.log(name,kids);
+*/
+let son={name:'Simba',parents:2};
+let name,parents;
+({name,parents}=son);
+console.log(name,parents);
