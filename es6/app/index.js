@@ -130,6 +130,83 @@ let doubled=values.map((n)=>{
 });
 console.log(doubled);*/
 
-let values=[20,30,40];
+/*let values=[20,30,40];
 let doubled=values.map((n)=>n*2);
 console.log(doubled);
+*/
+//****filter method
+/*let points =[7,6,21,4,3,22,5];
+let highscores=points.filter((n)=>{
+	return n>15;
+});
+console.log(highscores);
+
+let lowscores=points.filter((n)=>n<15);
+console.log(lowscores);
+//builtin helper methods*/
+/****string helper method****/
+/*let b ="wooh"+"oo".repeat(50);
+console.log(b);
+console.log("butterfly".startsWith("butter"));
+console.log("butterfly".endsWith("butter"));
+console.log("butterfly".includes("butter"));
+*/
+//-------------
+/*****checking numbers*////
+/*const addToCart=(item,number)=>{
+	return Number.isFinite(number);
+
+}
+console.log(addToCart("shirt",3));
+*/
+//isSafeInteger
+
+/*const addToCart=(item,number)=>{
+	return Number.isSafeInteger(number);
+
+}
+
+//*************IMPORT and EXport modules*///////
+/*console.log(addToCart("shirt",Math.pow(2,101)));*/
+/*import {fellowship,total} from "./fellowship";
+import {add,multiply} from "./math"
+console.log(fellowship);
+console.log(total);
+console.log(add(5,10));
+console.log(multiply(5,10));
+import multiply from "./math";
+console.log(multiply(5,10));*/
+
+//****************Classes
+
+/*class Animal{
+	constructor(name,height){
+		this.name=name;
+		this.height=height;
+
+	}
+	hello(){
+		console.log(`Hi I am ${this.name} from fucking zoo`);
+	}
+}
+let king=new Animal("Giraffee",15.8);
+console.log(king);
+king.hello();*/
+
+//*****Inheritance*/
+
+import Animal from "./animal";
+class Lion extends Animal{
+	constructor(name,height,color){
+		super(name,height);
+		this.color=color;
+	}
+	hello(){
+		console.log(`Hello ${this.name}  form nowhere`);
+
+	}
+
+}
+let son =new Lion("Simba",2,"Fucking brown");
+console.log(son);
+son.hello();
