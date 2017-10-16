@@ -234,7 +234,7 @@ console.log(b);
 */
 //*********Classes and prototypes
 
-function Wizard(name,house,pet){
+/*function Wizard(name,house,pet){
 	this.name=name;
 	this.house=house;
 	this.pet=pet;
@@ -250,4 +250,77 @@ console.log(harry);
 Wizard.prototype.info=function(){
 	return `I have a ${this.pet} named ${this.pet_name}`;
 }
-console.log(harry.info());
+console.log(harry.info());*/
+
+//*****Data Structures in ES6
+
+/***** Set */
+
+/*let a =new Set();
+a.add(5);
+a.add(43);
+a.add("Woof woof");
+a.add({x:50,y:200});
+console.log(a);
+console.log(a.size);
+console.log(a.has(5));
+console.log(a.has(7));
+/* converting arrays to set
+
+let numbers =[5,7,9,13,17,17];
+
+let numSet=new Set(numbers);
+console.log(numSet);
+
+for (let element of numSet.values()){
+	console.log(element);
+}
+
+/* converting string into arrays and then to set
+
+let chars='kadakdksfnooueioehoieksndlksnmcs dlkwnd';
+
+let chars_arr=chars.split("");
+console.log(chars_arr);
+let char_set=new Set(chars_arr);
+console.log(char_set);
+*/
+
+//*** Maps 
+
+let a= new Map();
+let key_1="String key";
+a.set(key_1,'return value of the string key');
+console.log(a);
+
+let key_2 ={a:'key'};
+a.set(key_2,'return value for an object key');
+
+console.log(a);
+
+let key_3 =function(){};
+a.set(key_3,'return value for a function key');
+
+console.log(a);
+
+let numArr=[[1,'one'],[2,'two']];
+let valmap=new Map(numArr);
+console.log(valmap);
+
+for(let [key,value] of valmap.entries()){
+	console.log(`${key} points to ${value}`);
+}
+
+let string="dkksdkahfkahkfkafjwi3wugreofJWBFJDBJAG";
+let letters =new Map();
+console.log(letters);
+for(let i=0;i<string.length;i++){
+	let letter=string[i];
+	if(!letters.has(letter)){
+		letters.set(letter,1);
+	}
+	else{
+		letters.set(letter,letters.get(letter)+1);
+	}
+}
+console.log(letters);
