@@ -13,3 +13,5 @@ console.log(king);
 king.hello();
 
 export default Animal;
+
+//********Static method in classes

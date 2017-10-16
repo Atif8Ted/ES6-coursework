@@ -193,8 +193,8 @@ let king=new Animal("Giraffee",15.8);
 console.log(king);
 king.hello();*/
 
-//*****Inheritance*/
-
+//*****Inheritance*//*
+/*
 import Animal from "./animal";
 class Lion extends Animal{
 	constructor(name,height,color){
@@ -210,3 +210,44 @@ class Lion extends Animal{
 let son =new Lion("Simba",2,"Fucking brown");
 console.log(son);
 son.hello();
+*/
+
+
+//**** static methods in classes
+/*
+class Calculator{
+	static multiply(a,b){
+		return a*b;
+	}
+
+	static add(a,b){
+		return a+b;
+	}
+}
+
+let a=Calculator.multiply(5,7);
+console.log(a);
+
+let b=Calculator.add(5,7);
+console.log(b);
+
+*/
+//*********Classes and prototypes
+
+function Wizard(name,house,pet){
+	this.name=name;
+	this.house=house;
+	this.pet=pet;
+	this.greet=()=>`I am ${this.name} from ${this.house}`;
+	
+}
+Wizard.prototype.pet_name;
+let harry=new Wizard("Harry Porter","Gryffindor","Ownl");
+
+harry.pet_name="Aaloo";
+console.log(harry.greet());
+console.log(harry);
+Wizard.prototype.info=function(){
+	return `I have a ${this.pet} named ${this.pet_name}`;
+}
+console.log(harry.info());
