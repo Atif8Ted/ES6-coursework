@@ -287,6 +287,7 @@ console.log(char_set);
 */
 
 //*** Maps 
+/*
 
 let a= new Map();
 let key_1="String key";
@@ -323,4 +324,7 @@ for(let i=0;i<string.length;i++){
 		letters.set(letter,letters.get(letter)+1);
 	}
 }
-console.log(letters);
+console.log(letters);*/
+
+//******Closures and Scoping 
+
