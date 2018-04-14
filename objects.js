@@ -3,7 +3,7 @@ var dog={
   breed:"Golden Retriever",
   weight:60,
   bark:function(){
-    console.log("Woof wooff
+    console.log("Woof woof");
   }
 };
 console.log(dog);
